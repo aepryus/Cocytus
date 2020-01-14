@@ -1,6 +1,6 @@
 //
-//  Array+Acheron.swift
-//  Acheron
+//  Array+Cocytus.swift
+//  Cocytus
 //
 //  Created by Joe Charlier on 5/10/19.
 //  Copyright © 2019 Aepryus Software. All rights reserved.
