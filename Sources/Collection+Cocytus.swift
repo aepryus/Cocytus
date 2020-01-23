@@ -1,6 +1,6 @@
 //
-//  Collection+Acheron.swift
-//  Acheron
+//  Collection+Cocytus.swift
+//  Cocytus
 //
 //  Created by Joe Charlier on 1/25/18.
 //  Copyright © 2018 Aepryus Software. All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  String+Acheron.swift
-//  Acheron
+//  String+Cocytus.swift
+//  Cocytus
 //
 //  Created by Joe Charlier on 4/23/19.
 //  Copyright © 2019 Aepryus Software. All rights reserved.

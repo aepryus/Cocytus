@@ -1,6 +1,6 @@
 //
 //  AETimer.swift
-//  Acheron
+//  Cocytus
 //
 //  Created by Joe Charlier on 8/27/19.
 //  Copyright © 2019 Aepryus Software. All rights reserved.

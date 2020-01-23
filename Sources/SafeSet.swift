@@ -1,6 +1,6 @@
 //
 //  SafeSet.swift
-//  Acheron
+//  Cocytus
 //
 //  Created by Joe Charlier on 10/29/19.
 //  Copyright © 2019 Aepryus Software. All rights reserved.
