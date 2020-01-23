@@ -211,7 +211,7 @@ public class Basket: NSObject {
 		var deletedDomains = Set<Domain>()
 
 		queue.sync {
-			autoreleasepool {
+//			autoreleasepool {
 				closure()
 				
 				while self.dirty.count > 0 {
@@ -241,12 +241,12 @@ public class Basket: NSObject {
 						anchor.save()
 					}
 				}
-			}
+//			}
 		}
 
 		if dirty.count > 0 {
 			self.persist.transact({ () -> (Bool) in
-				autoreleasepool {
+//				autoreleasepool {
 					for anchor in deletedAnchors {
 						if let only = anchor.only {onlyToIden["\(anchor.type!):\(only)"] = nil}
 						persist.delete(iden: anchor.iden)
@@ -255,7 +255,7 @@ public class Basket: NSObject {
 						if let only = anchor.only {onlyToIden["\(anchor.type!):\(only)"] = anchor.iden}
 						persist.store(iden: anchor.iden, attributes: anchor.unload())
 					}
-				}
+//				}
 				return true
 			})
 		}
