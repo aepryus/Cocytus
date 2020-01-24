@@ -359,13 +359,13 @@ open class Domain: NSObject {
 						}
 					} else if let cls = cls as? Packable.Type {
 						value = cls.init(value as! String)
-					} else if cls?.superclass() == Domain.self {
-						let valueAtts = value as! [String:Any]
-						let cls = Loom.classFromName(valueAtts["type"] as! String) as! Domain.Type
-						let domain = cls.init(attributes: valueAtts, parent: nil)
-						domain.load(attributes:valueAtts)
-						load(domain)
-						value = domain;
+//					} else if cls?.superclass() == Domain.self {
+//						let valueAtts = value as! [String:Any]
+//						let cls = Loom.classFromName(valueAtts["type"] as! String) as! Domain.Type
+//						let domain = cls.init(attributes: valueAtts, parent: nil)
+//						domain.load(attributes:valueAtts)
+//						load(domain)
+//						value = domain;
 					}
 				}
 			}
