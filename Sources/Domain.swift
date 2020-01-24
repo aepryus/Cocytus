@@ -446,10 +446,10 @@ open class Domain: NSObject {
 		get {return parent?.anchor}
 	}
 	
-// NSObject ========================================================================================
-	override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-		let oldValue = change?[.oldKey] as? NSObject
-		let newValue = change?[.newKey] as? NSObject
-		if newValue != oldValue {edit()}
-	}
+//// NSObject ========================================================================================
+//	override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//		let oldValue = change?[.oldKey] as? NSObject
+//		let newValue = change?[.newKey] as? NSObject
+//		if newValue != oldValue {edit()}
+//	}
 }
