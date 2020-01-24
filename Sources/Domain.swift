@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Runtime
 
 public enum DomainStatus {
 	case loading, clean, dirty, deleted
@@ -90,6 +91,21 @@ open class Domain: NSObject {
 		}
 	}
 	
+	subscript(key: String) -> Any? {
+		set {
+			
+			let info = try! typeInfo(of: Swift.type(of: self))
+			let property = try! info.property(named: key)
+			var user = self
+			try! property.set(value: newValue!, on: &user)
+		}
+		get {
+			let mirror: Mirror = Mirror(reflecting: self)
+			return mirror.children.first {$0.label == key}?.value
+		}
+	}
+	
+	
 	// Methods
 	func load(_ domain: Domain) {
 		domain.parent = self
@@ -113,7 +129,7 @@ open class Domain: NSObject {
 		var result: [Domain] = []
 		
 		for keyPath in children {
-			if let domains = self.value(forKeyPath: keyPath) as? [Domain] {
+			if let domains = self[keyPath] as? [Domain] {
 				result += domains
 			}
 		}
@@ -267,7 +283,7 @@ open class Domain: NSObject {
 		var attributes = [String:Any]()
 		
 		for keyPath in properties {
-			let value = self.value(forKeyPath: keyPath) as Any?
+			let value = self[keyPath]
 			let unloader = self.unloader(keyPath:keyPath)
 			if let unloader = unloader {
 				attributes[keyPath] = unloader(value!)
@@ -282,7 +298,7 @@ open class Domain: NSObject {
 			}
 		}
 		for keyPath in children {
-			let domains = value(forKeyPath: keyPath) as! [Any]
+			let domains = self[keyPath] as! [Any]
 			if domains.count == 0 {
 				attributes.removeValue(forKey: keyPath)
 				continue
@@ -354,11 +370,11 @@ open class Domain: NSObject {
 				}
 			}
 			
-			if value != nil {setValue(value, forKey: keyPath)}
+			if value != nil {self[keyPath] = value}
 			else {
 				if let currentValue = self.value(forKeyPath: keyPath) as Any? {
 					if isOptional(currentValue) {
-						setValue(nil, forKey: keyPath)
+						self[keyPath] = nil
 					}
 				}
 			}
@@ -393,7 +409,7 @@ open class Domain: NSObject {
 						array.append(string)
 					}
 				}
-				setValue(array, forKey: keyPath)
+				self[keyPath] = array
 			}
 		}
 		load()
