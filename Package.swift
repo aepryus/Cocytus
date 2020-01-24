@@ -6,12 +6,12 @@ import PackageDescription
 let package = Package(
     name: "Cocytus",
     products: [
-        .executable(name: "Cocytus", targets: ["Cocytus"])
+        .library(name: "Cocytus", targets: ["Cocytus"]),
     ],
     dependencies: [
 		.package(url: "https://github.com/wickwirew/Runtime.git", from: "2.0.0")
     ],
     targets: [
-        .target(name: "Cocytus", dependencies: ["Runtime"], path: "Sources"),
+        .target(name: "Cocytus", dependencies: ["Runtime"], path: "Sources")
     ]
 )
