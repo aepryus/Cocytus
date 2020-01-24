@@ -37,8 +37,8 @@ open class Domain: NSObject {
 		set {
 			guard _status != newValue else {return}
 			
-			objc_sync_enter(self)
-			defer {objc_sync_exit(self)}
+//			objc_sync_enter(self)
+//			defer {objc_sync_exit(self)}
 			
 			if _status == .loading && newValue == .dirty {
 				
