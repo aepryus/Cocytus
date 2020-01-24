@@ -190,16 +190,16 @@ open class Domain: NSObject {
 
 	private func subscribe() {
 		if isStatic {return}
-		for keyPath in properties {
-			addObserver(self, forKeyPath: keyPath, options: [.new,.old], context: nil)
-		}
+//		for keyPath in properties {
+//			addObserver(self, forKeyPath: keyPath, options: [.new,.old], context: nil)
+//		}
 		subscribed = true
 	}
 	private func unsubscribe() {
 		if isStatic {return}
-		for keyPath in properties {
-			removeObserver(self, forKeyPath: keyPath)
-		}
+//		for keyPath in properties {
+//			removeObserver(self, forKeyPath: keyPath)
+//		}
 		subscribed = false
 	}
 	
