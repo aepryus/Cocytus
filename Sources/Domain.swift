@@ -182,7 +182,7 @@ open class Domain: NSObject {
 			} else {
 				propertyToClass![keyPath] = NotFound.self
 			}
-		} else if cls === NotFound.self {
+		} else if cls! === NotFound.self {
 			cls = nil
 		}
 		return cls
