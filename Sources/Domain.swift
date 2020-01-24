@@ -320,7 +320,7 @@ open class Domain: NSObject {
 	private func indexOfChildren(_ keyPath: String) -> [String:Domain] {
 		var index: [String:Domain] = [:]
 		
-		let domains = value(forKeyPath: keyPath) as! [Domain]
+		let domains = self[keyPath] as! [Domain]
 		for domain in domains {
 			index[domain.iden] = domain
 		}
@@ -372,7 +372,7 @@ open class Domain: NSObject {
 			
 			if value != nil {self[keyPath] = value}
 			else {
-				if let currentValue = self.value(forKeyPath: keyPath) as Any? {
+				if let currentValue = self[keyPath] as Any? {
 					if isOptional(currentValue) {
 						self[keyPath] = nil
 					}
