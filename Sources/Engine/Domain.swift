@@ -204,10 +204,10 @@ open class Domain: NSObject {
 	}
 	
 	private func handleTriggers(_ domain: Domain, action: DomainAction) {
-		guard let basket = domain.anchor?.basket else {return}
-		for block in basket.blocksFor(class: Swift.type(of: domain), action: action) {
-			block(domain)
-		}
+//		guard let basket = domain.anchor?.basket else {return}
+//		for block in basket.blocksFor(class: Swift.type(of: domain), action: action) {
+//			block(domain)
+//		}
 	}
 	
 // Actions =========================================================================================
@@ -442,9 +442,9 @@ open class Domain: NSObject {
 	var isStatic: Bool {
 		return false
 	}
-	public var anchor: Anchor? {
-		get {return parent?.anchor}
-	}
+//	public var anchor: Anchor? {
+//		get {return parent?.anchor}
+//	}
 	
 //// NSObject ========================================================================================
 //	override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {

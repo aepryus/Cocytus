@@ -9,8 +9,7 @@
 import Foundation
 
 public extension Date {
-	
-	static var formatters: [String:DateFormatter] = [:]
+	private static var formatters: [String:DateFormatter] = [:]
 	func format(_ template: String) -> String {
 		var formatter = Date.formatters[template]
 		if formatter == nil {
@@ -20,7 +19,7 @@ public extension Date {
 		}
 		return formatter!.string(from: self)
 	}
-
+	
 	static var now: Date {return Date()}
 	
 	static var isoFormatter: DateFormatter = {
@@ -29,10 +28,15 @@ public extension Date {
 		formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 		return formatter
 	}()
+	static var iso8601Formatter: ISO8601DateFormatter = {
+		let formatter: ISO8601DateFormatter = ISO8601DateFormatter()
+		formatter.formatOptions = [.withFractionalSeconds, .withInternetDateTime]
+		return formatter
+	}()
 	func toISOFormattedString() -> String {
 		return Date.isoFormatter.string(from: self)
 	}
 	static func fromISOFormatted(string: String) -> Date? {
-		return Date.isoFormatter.date(from: string)
+		return Date.iso8601Formatter.date(from: string) ?? Date.isoFormatter.date(from: string)
 	}
 }

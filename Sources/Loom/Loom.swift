@@ -9,7 +9,7 @@
 import Foundation
 
 public class Loom {
-	public static var basket: Basket!
+//	public static var basket: Basket!
 
 	private static var namespaces: [String] = []
 	static var domains = [String:[String:AnyClass]]()
@@ -81,41 +81,41 @@ public class Loom {
 		return nil
 	}
 	
-	public static func set(key: String, value: String) {
-		Loom.basket.set(key: key, value: value)
-	}
-	public static func get(key: String) -> String? {
-		return Loom.basket.get(key: key)
-	}
-	public static func unset(key: String) {
-		Loom.basket.unset(key: key)
-	}
-	public static func create(cls: Anchor.Type, only: String? = nil) -> Anchor {
-		return Loom.basket.createBy(cls: cls, only: only)
-	}
-	
-	public static func selectBy(iden: String) -> Anchor? {
-		return Loom.basket.selectBy(iden: iden)
-	}
-	public static func selectBy(cls: Anchor.Type, only: String) -> Anchor? {
-		return Loom.basket.selectBy(cls: cls, only: only)
-	}
-	public static func selectOne(where field: String, is value: String, type: Anchor.Type) -> Domain? {
-		return Loom.basket.selectOne(where: field, is: value, type: type)
-	}
-	public static func select(where field: String, is value: String, type: Anchor.Type) -> [Domain] {
-		return Loom.basket.select(where: field, is: value, type: type)
-	}
-	public static func selectAll(_ type: Anchor.Type) -> [Anchor] {
-		return Loom.basket.selectAll(type)
-	}
-	
-	public static func transact(_ closure: ()->()) {
-		Loom.basket.transact(closure)
-	}
-	
-	public static func start(basket: Basket, namespaces: [String]) {
-		Loom.basket = basket
-		Loom.namespaces = namespaces
-	}
+//	public static func set(key: String, value: String) {
+//		Loom.basket.set(key: key, value: value)
+//	}
+//	public static func get(key: String) -> String? {
+//		return Loom.basket.get(key: key)
+//	}
+//	public static func unset(key: String) {
+//		Loom.basket.unset(key: key)
+//	}
+//	public static func create(cls: Anchor.Type, only: String? = nil) -> Anchor {
+//		return Loom.basket.createBy(cls: cls, only: only)
+//	}
+//	
+//	public static func selectBy(iden: String) -> Anchor? {
+//		return Loom.basket.selectBy(iden: iden)
+//	}
+//	public static func selectBy(cls: Anchor.Type, only: String) -> Anchor? {
+//		return Loom.basket.selectBy(cls: cls, only: only)
+//	}
+//	public static func selectOne(where field: String, is value: String, type: Anchor.Type) -> Domain? {
+//		return Loom.basket.selectOne(where: field, is: value, type: type)
+//	}
+//	public static func select(where field: String, is value: String, type: Anchor.Type) -> [Domain] {
+//		return Loom.basket.select(where: field, is: value, type: type)
+//	}
+//	public static func selectAll(_ type: Anchor.Type) -> [Anchor] {
+//		return Loom.basket.selectAll(type)
+//	}
+//	
+//	public static func transact(_ closure: ()->()) {
+//		Loom.basket.transact(closure)
+//	}
+//	
+//	public static func start(basket: Basket, namespaces: [String]) {
+//		Loom.basket = basket
+//		Loom.namespaces = namespaces
+//	}
 }

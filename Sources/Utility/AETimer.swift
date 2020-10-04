@@ -13,35 +13,38 @@ public class AETimer {
 	
 	public init() {}
 	deinit {
-		if !running {timer.resume()}
+		if !running { timer.resume() }
 	}
 	
-	var interval: Double = 1.0/60 {
-		didSet {timer.schedule(deadline: .now(), repeating: interval)}
+	public var interval: Double = 1.0/60 {
+		didSet { timer.schedule(deadline: .now(), repeating: interval) }
 	}
 	
 	private(set) var running: Bool = false
 	private var semaphore = DispatchSemaphore(value: 1)
 	
-	public func configure (interval: Double, _ block: @escaping()->()) {
+	public func configure (interval: Double, _ closure: @escaping()->()) {
 		timer.setEventHandler { [unowned self] in
 			self.semaphore.wait()
-			block()
+			closure()
 			self.semaphore.signal()
 		}
 		self.interval = interval
 	}
 	
 	public func start() {
-		guard !running else {return}
+		guard !running else { return }
 		running = true
 		timer.resume()
 	}
 	public func stop() {
-		guard running else {return}
+		guard running else { return }
 		running = false
-		timer.suspend()
 		semaphore.wait()
+		timer.suspend()
 		semaphore.signal()
+	}
+	public func reschedule() {
+		timer.schedule(deadline: .now()+interval/2, repeating: interval)
 	}
 }

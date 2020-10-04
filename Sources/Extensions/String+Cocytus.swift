@@ -8,6 +8,8 @@
 
 import Foundation
 
+let chars_ = "0123456789abcdefghijklmnopqrstuvwxyz"
+
 public extension String {
 	subscript(i: Int) -> Character {										// [a]
 		return self[index(startIndex, offsetBy: i)]
@@ -70,5 +72,14 @@ public extension String {
 	
 	static func uuid() -> String {
 		return UUID().uuidString
+	}
+	
+	static func randomString(length: Int) -> String {
+		var sb = String()
+		for _ in 0..<length {
+			let index  = chars_.index(chars_.startIndex, offsetBy: Int.random(in: 0..<36))
+			sb.append(chars_[index])
+		}
+		return sb
 	}
 }
