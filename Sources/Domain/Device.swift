@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Device {
+public class Device {
 	var token: String
 	var acnt: UUID
 	var tag: String

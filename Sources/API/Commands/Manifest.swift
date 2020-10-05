@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Manifest: Command {
+public class Manifest: Command {
 	init () {
 		super.init(method: .post, path: "/manifest")
 	}

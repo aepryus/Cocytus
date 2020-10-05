@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Persist {
+open class Persist {
 	var name: String
 	var acnt: UUID?
 	

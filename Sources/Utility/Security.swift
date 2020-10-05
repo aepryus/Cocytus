@@ -9,7 +9,7 @@
 import Foundation
 import PerfectBCrypt
 
-class Security {
+public class Security {
 	static func encryptSHA256(string: String) -> String? {
 		if let encoded = string.digest(.sha256)?.encode(.base64) {
 			return String(validatingUTF8: encoded)

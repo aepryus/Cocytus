@@ -11,7 +11,7 @@ import Foundation
 import PerfectMySQL
 import PerfectThread
 
-class MySQLPool {
+public class MySQLPool {
 	var name: String
 	private var r: Int = 0
 	private var n: Int = 20

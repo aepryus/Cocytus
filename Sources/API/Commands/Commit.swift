@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Commit: Command {
+public class Commit: Command {
 	init () {
 		super.init(method: .post, path: "/commit")
 	}

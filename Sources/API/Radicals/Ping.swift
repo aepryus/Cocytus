@@ -9,7 +9,7 @@
 import Foundation
 import PerfectHTTP
 
-class Ping: Radical {
+public class Ping: Radical {
 	init() {
 		super.init(method: .get, path: "/ping")
 	}

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Synchronize: Command {
+public class Synchronize: Command {
 	init () {
 		super.init(method: .post, path: "/synchronize")
 	}

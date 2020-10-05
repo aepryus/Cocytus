@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Resolver {
+open class Resolver {
 	var type: String
 	var only: String?
 

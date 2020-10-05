@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RegisterAccount: Command {
+public class RegisterAccount: Command {
 	init() {
 		super.init(method: .post, path: "/registerAccount")
 	}

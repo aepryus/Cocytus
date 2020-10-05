@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum VellumStatus {
+public enum VellumStatus {
 	case loading, clean, dirty, deleted
 }
 
-class Vellum {
+public class Vellum {
 	let acnt: UUID
 	let iden: UUID
 	let type: String

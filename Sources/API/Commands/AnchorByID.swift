@@ -9,7 +9,7 @@
 import Foundation
 import PerfectHTTP
 
-class AnchorByID: Command {
+public class AnchorByID: Command {
 	init () {
 		super.init(method: .post, path: "/anchorByID")
 	}

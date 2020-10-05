@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum CocytusError: Error, Equatable, CustomStringConvertible {
+public enum CocytusError: Error, Equatable, CustomStringConvertible {
 	case wrongServer
 	case other(_ message: String)
 	
 // CustomStringConvertible =========================================================================
-	var description: String {
+	public var description: String {
 		switch self {
 			case .wrongServer: return "wrong server"
 			case .other(let message): return message

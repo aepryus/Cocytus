@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Log {
+public class Log {
 	static var fileURL: URL?
 	
 	static func initialize(path: String) {

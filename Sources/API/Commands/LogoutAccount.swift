@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LogoutAccount: Command {
+public class LogoutAccount: Command {
 	init () {
 		super.init(method: .post, path: "/logoutAccount")
 	}

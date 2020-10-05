@@ -9,7 +9,7 @@
 import Dispatch
 import Foundation
 
-class Codex {
+public class Codex {
 	var persist: Persist
 	var account: Account
 	

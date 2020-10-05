@@ -9,7 +9,7 @@
 import Foundation
 import PerfectHTTP
 
-class LoginAccount: Radical {
+public class LoginAccount: Radical {
 	init() {
 		super.init(method: .post, path: "/loginAccount")
 	}

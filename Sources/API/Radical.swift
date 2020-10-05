@@ -9,7 +9,7 @@
 import Foundation
 import PerfectHTTP
 
-class Radical {
+open class Radical {
 	var method: HTTPMethod
 	var path: String
 

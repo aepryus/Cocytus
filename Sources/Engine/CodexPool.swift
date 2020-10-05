@@ -9,7 +9,7 @@
 import Foundation
 import PerfectMySQL
 
-class CodexPool {
+public class CodexPool {
 	private let name: String
 	private let persist: Persist
 	private var devices: NSCache<NSString, Device>

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Memory {
+public class Memory {
 	var acnt: UUID
 	var name: String
 	var value: String

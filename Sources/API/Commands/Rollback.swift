@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Rollback: Command {
+public class Rollback: Command {
 	init () {
 		super.init(method: .post, path: "/rollback")
 	}
