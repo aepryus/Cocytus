@@ -16,8 +16,8 @@ public class Ping: Radical {
 	
 // Radical =========================================================================================
 	public override func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
-//		var sb: String = "[ping]"
-//		defer {Log.print(sb)}
+		var sb: String = "[ping]"
+		defer {Log.print(sb)}
 		return [:]
 	}
 }

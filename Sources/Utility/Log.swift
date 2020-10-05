@@ -12,9 +12,9 @@ public class Log {
 	static var fileURL: URL?
 	
 	public static func initialize(path: String) {
-		let fileURL = URL(fileURLWithPath: path)
-		if !FileManager.default.fileExists(atPath: fileURL.path) {
-			FileManager.default.createFile(atPath: fileURL.path, contents: nil, attributes: nil)
+		fileURL = URL(fileURLWithPath: path)
+		if !FileManager.default.fileExists(atPath: fileURL!.path) {
+			FileManager.default.createFile(atPath: fileURL!.path, contents: nil, attributes: nil)
 		}
 	}
 
