@@ -9,12 +9,12 @@
 import Foundation
 
 public class Synchronize: Command {
-	init () {
+	public init () {
 		super.init(method: .post, path: "/synchronize")
 	}
 	
 // Command =========================================================================================
-	override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
+	public override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
 		var sb: String = "[synchronize]"
 		defer {Log.print(sb)}
 		

@@ -9,12 +9,12 @@
 import Foundation
 
 public class RegisterAccount: Command {
-	init() {
+	public init() {
 		super.init(method: .post, path: "/registerAccount")
 	}
 	
 // Command =========================================================================================
-	override func execute(params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String : Any] {
+	public override func execute(params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String : Any] {
 		var sb: String = "[registerAccount]"
 		defer {Log.print(sb)}
 		

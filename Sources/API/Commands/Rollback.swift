@@ -9,12 +9,12 @@
 import Foundation
 
 public class Rollback: Command {
-	init () {
+	public init () {
 		super.init(method: .post, path: "/rollback")
 	}
 	
 // Commamnd ========================================================================================
-	override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
+	public override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
 		let sb: String = "[rollback] fork \(account.fork+1) rolledback"
 		defer {Log.print(sb)}
 

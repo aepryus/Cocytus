@@ -9,12 +9,12 @@
 import Foundation
 
 public class LogoutAccount: Command {
-	init () {
+	public init () {
 		super.init(method: .post, path: "/logoutAccount")
 	}
 	
 // Command =========================================================================================
-	override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
+	public override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
 		var sb: String = "[logout]"
 		defer {Log.print(sb)}
 		

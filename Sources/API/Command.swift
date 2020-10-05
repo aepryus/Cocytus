@@ -10,7 +10,7 @@ import Foundation
 import PerfectHTTP
 
 open class Command: Radical {
-	func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
+	public func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
 		return [:]
 	}
 	

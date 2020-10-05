@@ -9,12 +9,12 @@
 import Foundation
 
 public class Manifest: Command {
-	init () {
+	public init () {
 		super.init(method: .post, path: "/manifest")
 	}
 
 // Command =========================================================================================
-	override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
+	public override func execute (params: [String:String], attributes: [String:Any], device: Device, account: Account, codex: Codex) -> [String:Any] {
 		var sb: String = "[manifest]"
 		defer {Log.print(sb)}
 

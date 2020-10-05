@@ -10,7 +10,7 @@ import Foundation
 import PerfectHTTP
 
 public class Ping: Radical {
-	init() {
+	public init() {
 		super.init(method: .get, path: "/ping")
 	}
 	
