@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PerfectHTTP
 import PerfectBCrypt
 
 public class Security {
