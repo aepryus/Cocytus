@@ -11,14 +11,14 @@ import Foundation
 public class Log {
 	static var fileURL: URL?
 	
-	static func initialize(path: String) {
+	public static func initialize(path: String) {
 		let fileURL = URL(fileURLWithPath: path)
 		if !FileManager.default.fileExists(atPath: fileURL.path) {
 			FileManager.default.createFile(atPath: fileURL.path, contents: nil, attributes: nil)
 		}
 	}
 
-	static func print(_ string: String) {
+	public static func print(_ string: String) {
 		Swift.print(string)
 		guard let fileURL = fileURL else { return }
 		guard let data: Data = "[\(Date().toISOFormattedString())] \(string)\n".data(using: .utf8) else { return }

@@ -9,15 +9,15 @@
 import Foundation
 
 public class Account {
-	var acnt: UUID
-	var otid: String
-	var expires: Date
-	var user: String?
-	var email: String?
-	var name: String?
-	var fork: Int
-	var token: String
-	var since: Int
+	public var acnt: UUID
+	public var otid: String
+	public var expires: Date
+	public var user: String?
+	public var email: String?
+	public var name: String?
+	public var fork: Int
+	public var token: String
+	public var since: Int
 	
 	public init (acnt: UUID, otid: String, expires: Date, user: String? = nil, email: String? = nil, name: String? = nil, fork: Int, token: String, since: Int) {
 		self.acnt = acnt

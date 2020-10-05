@@ -15,7 +15,7 @@ open class Command: Radical {
 	}
 	
 // Radical =========================================================================================
-	final override func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
+	public final override func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
 		var params = [String:String]()
 		for (a,b) in request.params() {
 			params[a] = b

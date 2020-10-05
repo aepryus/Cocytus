@@ -15,7 +15,7 @@ public class LoginAccount: Radical {
 	}
 	
 // Radical =========================================================================================
-	override func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
+	public override func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
 		var sb: String = "[loginAccount]"
 		let sbe: String? = nil
 		defer {

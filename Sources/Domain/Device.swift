@@ -9,13 +9,13 @@
 import Foundation
 
 public class Device {
-	var token: String
-	var acnt: UUID
-	var tag: String
-	var fork: Int
-	var synced: String?
+	public var token: String
+	public var acnt: UUID
+	public var tag: String
+	public var fork: Int
+	public var synced: String?
 	
-	init (token: String, acnt: UUID, tag: String, fork: Int, synced: String?) {
+	public init (token: String, acnt: UUID, tag: String, fork: Int, synced: String?) {
 		self.token = token
 		self.acnt = acnt
 		self.tag = tag

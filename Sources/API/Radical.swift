@@ -10,23 +10,23 @@ import Foundation
 import PerfectHTTP
 
 open class Radical {
-	var method: HTTPMethod
-	var path: String
+	public var method: HTTPMethod
+	public var path: String
 
-	init (method: HTTPMethod, path: String) {
+	public init (method: HTTPMethod, path: String) {
 		self.method = method
 		self.path = path
 	}
 	
-	static func sanitize(uuid: Any?) -> String? {
-		return UUID(uuidString: uuid as? String ?? "")?.uuidString
-	}
+//	public static func sanitize(uuid: Any?) -> String? {
+//		return UUID(uuidString: uuid as? String ?? "")?.uuidString
+//	}
 
-	func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
+	public func execute (request: HTTPRequest, response: HTTPResponse) -> [String:Any] {
 		return [:]
 	}
 	
-	final func handler (request: HTTPRequest, response: HTTPResponse) {
+	public final func handler (request: HTTPRequest, response: HTTPResponse) {
 		response.setHeader(.contentType, value: "text/json")
 		response.appendBody(string: execute(request: request, response: response).toJSON())
 		response.completed()

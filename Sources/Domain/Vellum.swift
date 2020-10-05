@@ -13,32 +13,32 @@ public enum VellumStatus {
 }
 
 public class Vellum {
-	let acnt: UUID
-	let iden: UUID
-	let type: String
-	let only: String?
-	var json: String!
-	var vers: Int
-	var fork: Int
-	var born: Int
-	var gone: Int?
+	public let acnt: UUID
+	public let iden: UUID
+	public let type: String
+	public let only: String?
+	public var json: String!
+	public var vers: Int
+	public var fork: Int
+	public var born: Int
+	public var gone: Int?
 	
-	var attributes: [String:Any] {
+	public var attributes: [String:Any] {
 		didSet {
 			loadAttributes(attributes)
 		}
 	}
-	var modified: Date = Date()
+	public var modified: Date = Date()
 	
-	var status: VellumStatus = .loading
+	public var status: VellumStatus = .loading
 	
-	static let iso8601: DateFormatter = {
+	public static let iso8601: DateFormatter = {
 		let formatter = DateFormatter()
 		formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
 		return formatter
 	}()
 	
-	init (acnt: UUID, born: Int, attributes: [String:Any]) {
+	public init (acnt: UUID, born: Int, attributes: [String:Any]) {
 		self.attributes = attributes
 
 		self.acnt = acnt
@@ -58,7 +58,7 @@ public class Vellum {
 		fork = attributes["fork"] as! Int
 		gone = attributes["gone"] as? Int
 	}
-	init (acnt: UUID, iden: UUID, type: String, only: String?, json: String, vers: Int, fork: Int, born: Int, gone: Int?) {
+	public init (acnt: UUID, iden: UUID, type: String, only: String?, json: String, vers: Int, fork: Int, born: Int, gone: Int?) {
 		self.acnt = acnt
 		self.iden = iden
 		self.type = type
@@ -82,13 +82,13 @@ public class Vellum {
 	}
 	
 // Actions =========================================================================================
-	func create () {
+	public func create () {
 		dirty()
 	}
-	func edit () {
+	public func edit () {
 		dirty()
 	}
-	func delete () {
+	public func delete () {
 		status = .deleted
 	}
 	
@@ -96,20 +96,20 @@ public class Vellum {
 		status = .dirty
 	}
 	
-	func load () {
+	public func load () {
 		status = .clean
 	}
-	func save () {
+	public func save () {
 		status = .clean
 	}
 
 // Static ==========================================================================================
 	static var resolvers = [String:Resolver]()
 	
-	static func registerResolver (_ resolver: Resolver) {
+	public static func registerResolver (_ resolver: Resolver) {
 		resolvers[resolver.type] = resolver
 	}
-	static func resolver (for type: String) -> Resolver? {
+	public static func resolver (for type: String) -> Resolver? {
 		return resolvers[type]
 	}
 }
