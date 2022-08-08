@@ -1,4 +1,4 @@
-##Work from the Outside In; Not from the Inside Out
+# Work from the Outside In; Not from the Inside Out
 
 It is always tempting to start with the beginning. It is much better to start with the ending.
 
