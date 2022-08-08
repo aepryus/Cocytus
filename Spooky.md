@@ -1,4 +1,4 @@
-##Avoid Spooky Action at a Distance
+# Avoid Spooky Action at a Distance
 
 The perhaps never entirely achievable ideal is that at any location of a program all relevant and no irrelevant code is close 
 by.  Perhaps one of the strengths of object oriented programming in general is that it comes much closer to this ideal.
