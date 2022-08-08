@@ -1,4 +1,4 @@
-##Don’t Include Code You Don’t Understand
+# Don’t Include Code You Don’t Understand
 
 This may (hopefully) seem like a pretty obvious guideline, but certainly at times when deadlines loom and a code snippet from 
 StackOverflow looks suspiciously promising, it can be tempting to plop it into place. But, the chances of this creating 
