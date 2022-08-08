@@ -1,4 +1,4 @@
-##Always Think About Trade Offs
+# Always Think About Trade Offs
 
 Software development is a constant balancing act. One is constantly weighting the relative merits of a number of different 
 factors. It is important to be cognizant of this process and to make thoughtful decisions about which to prioritize when they 
