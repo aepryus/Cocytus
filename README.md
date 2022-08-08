@@ -7,10 +7,9 @@ _a few things to consider while coding_
 - [4. Avoid Spooky Action at a Distance](Spooky.md)
 - [5. Be Predictable](Predictable.md)
 - [6. Simplify Over Commenting](Commenting.md)
-- [7. Don't Include Code You Don't Understand](Understand.md)
-- [8. Always be Cognizant of Trade Offs](Cognizant.md)
-- [9. Don't Blindly Follow Rules](Rules.md)
-
+- [7. Always be Cognizant of Trade Offs](Cognizant.md)
+- [8. Don't Blindly Follow Rules](Rules.md)
+- [9. Don't Include Code You Don't Understand](Understand.md)
 
 
 <p>
