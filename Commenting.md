@@ -1,4 +1,4 @@
-##Simplify Over Commenting
+# Simplify Over Commenting
 
 Another edict passed on from old is the importance of commenting your code. This really is quite important when writing 
 machine language or even assembly. But, since we are probably not, perhaps its time for a little blasphemy.
