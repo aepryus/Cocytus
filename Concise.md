@@ -1,4 +1,4 @@
-##The Easiest Code to Read is the Code that is not There
+# The Easiest Code to Read is the Code that is not There
 
 If two programs are exactly the same; they look the same; they behave the same; they take the same input and provide the same 
 output, but one was written with 1000 lines of code and the other with 10,000 lines of code. The code of the 1000 line program 
