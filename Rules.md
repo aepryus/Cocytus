@@ -1,4 +1,4 @@
-##Don’t Blindly Follow Rules
+# Don’t Blindly Follow Rules
 
 Religion, conventional wisdom and fad have no place in software development; especially for competent developers. Of course 
 the demand for software developers way outstrips the supply, so perhaps this doesn’t pertain to everyone. But, for good 
