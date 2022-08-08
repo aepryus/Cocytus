@@ -1,4 +1,5 @@
 # Cocytus
+_a few things to consider while coding_
 
 - [1. The Easiest Code to Read is the Code that is not There](Concise.md)
 - [2. Work from the Outside In; Not from the Inside Out](Outside.md)
