@@ -13,3 +13,6 @@ _a few things to consider while coding_
 
 
 
+<p>
+  <img src="07bic0ao8d571.jpg" width=500>
+</p>
