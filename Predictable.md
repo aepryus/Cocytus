@@ -1,4 +1,4 @@
-##Be Predictable
+# Be Predictable
 
 Another certainly unachievable, but desired ideal is to have any code base you are working in entirely memorized.  If one has 
 all the code in their head, if they know where any given function is located and what it does, extending and maintaining the 
