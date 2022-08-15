@@ -18,6 +18,9 @@ For example, the form and function of the app is obviously of utmost importance.
 mind that would slightly improve the form of the app, but will take two weeks to implement. In that case, perhaps ‘speed to 
 develop’ may override ‘form and function’.
 
+One thing I'd like to point out about the previous "The Easiest 
+
+
 Harping back to my point about concise code; while there are often times when these factors come into conflict with one 
 another, with few exceptions writing concise code almost always enhances all of the above considerations.
 
@@ -33,8 +36,3 @@ confined in a code base.
 
 And of course all of this then allows for more iterations to be tried, more malleable, less buggy code; which all points to 
 better form and function of the app itself. Concise code is very close to being a programming magic bullet.
-
-Certainly, performant code is desirable. However, occasionally performant code may take longer to develop or may reduce the 
-readability of the code. And in many cases, the difference in performance will not be noticeable to the user. So, it may be 
-best to deprioritize performance until it becomes a problem. Don’t solve performance problems you don’t have, i.e, avoid 
-premature optimization. This leads us to another guideline:
