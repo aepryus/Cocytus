@@ -1,23 +1,28 @@
 # Avoid Spooky Action at a Distance
 
-The perhaps never entirely achievable ideal is that at any location of a program all relevant and no irrelevant code is close 
-by.  Perhaps one of the strengths of object oriented programming in general is that it comes much closer to this ideal.
+The (perhaps never entirely achievable) ideal is that at any location in the code all relevant code is at hand.  If I want to understand an aspect of a program I'd love to be able to see all of the related and none of the unrelated code on the screen at once.  Arguably, this is the primary goal of object oriented programing itself.
 
-Unfortunately, there are a handful of tools and ancient commandments that go directly counter to this ideal and greatly aid in 
-making code harder to maintain.  For example in Swift, both implied types and the typedef command are among the most powerful 
-tools in reducing the readability of code.  I highly advocate against using either in almost all cases.
+However, there are both ancient commandments and more mundane common practices that fly directly counter to this ideal, including some features of Swift itself:
 
-The 70s error commandment to never put ‘magic numbers’ in the code base is also huge boon to reducing code readability, 
-maintainability and in injecting crazy side effect bugs.
+## Magic Numbers
 
-Once I’ve added a constant to represent a value, for example the pixel distance between two controls, I’ve created all sorts 
-of problems.  I can’t just go to the code to see what the distance is because instead of seeing a “10”, I see 
-“distanceBetweenControls” variable.  I now need to find that variable to see where it’s set.  If I want to change the value to 
-“12”, I then need to see if anyone else is making use of the variable and if they are I need to make sure that they all want 
-to be moved to 12.  And if they don’t, now I need to make another variable?
+The 70s era piety to "never use magic numbers!" was born out people struggling to understand someone else's assembly code.  And certainly, there ARE cases where using magic numbers greatly reduce the readibility of code.  However, once people start using the words 'always' and 'never', problems arise.
 
-Aside from all that what are the chances that the name of the control actually tells me what it represents?  It would be 
-infinitely better to just be able to see how it is used.
+For example, if I want a control B to be located 10 pixels to the right of control A, I could create a ```pixelsBetweenControls``` constant.  But, once I do this I create all sorts of issues:
 
-Of course, with all that being said there *are* cases where it makes sense to have a constant.  But, those are the exception 
-and not the rule; we are not programming in assembly language any more.
+- If I want to know how many pixels are between the controls I now can't see it at the relevant area of the code.  I need to navigate some where else.
+- If I want to adjust the value I need to do so where the constant is defined instead of at the code where it is used.
+- If I do adjust the value I now have to worry about if and how many other places use the value and if I want those changed also.
+- It can be very difficult to give such a variable a clear name and certainly not as clear as simply seeing how it's being in the code directly.
+
+## Typedefs
+
+Along the same lines, but even more troublesome are typedefs especially in regard to closures that hide the types of input parameters and return types.  Use of a typedef guarantees the need for subsequent for subsequent developers to repeatedly need to navigate to the definition just to see basic type information.
+
+Similarly, implied types are even more unfriendly, because you can't just glance up and know what the variable represents and, also you can't just right click on it and navigate to the type definition.
+
+## Vertical Spacing
+
+Being stingy with vertical spacing allows for more code to be shown on the screen at the same time.  Obviously, using vertical spaces to help group related code can greatly increase readibility.  But, unnecessary and arbitrary extra vertical spaces, as well as unhelpful comments just reduces the amount of code that can be put up on the screen at the same time.
+
+Simularly, always putting input parameters of method calls on their own line can greatly reduce the amount of code that can be seen and in most cases (but certainly not all) doesn't enhance the readibility of the code.
