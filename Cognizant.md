@@ -4,12 +4,13 @@ Software development is a constant balancing act. One is constantly weighing the
 factors. It is important to be cognizant of this process and to make thoughtful decisions about which to prioritize when they 
 come into conflict with one another. Here is a partial list of these considerations:
 
-form and function of the app
-readability of the code
-reusability of the code
-speed to develop
-performance of the code
-other app footprints such as memory, storage, bandwidth and battery usage
+- form and function of the app
+- readability of the code
+- reusability of the code
+- speed to develop
+- performance of the code
+- other app footprints such as memory, storage, bandwidth and battery usage
+
 The above list is loosely order by relative importance, however, everything really needs to be decided on a case by case 
 basis. There really, is never case where any one of these items can’t trump another.
 
