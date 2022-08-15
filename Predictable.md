@@ -20,7 +20,7 @@ relate to things a person may already know, some are algorithmic with varying de
 One of the goals of coding should be to write the code in a way that maximizes ones chance of keeping it in their head. As 
 code becomes more algorithmic, more predictable, it becomes increasingly easy to keep it in one’s head.
 
-One area where this can be important is naming. For example, perhaps one has a view with a image on it; here are some 
+One area where this can be important is naming. For example, perhaps one has a view with an image on it; here are some 
 potential names:
 
 ```Swift
