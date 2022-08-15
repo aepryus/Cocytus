@@ -9,5 +9,7 @@ the amount of code visible at one time. But, most importantly, comments excuse p
 your code requires comments to explain, perhaps its time to re-write it instead.
 
 A much better tool for creating readable code than commenting is elegant naming and code structure. A class’s name should make 
-it apparent what it is; a method name should make it apparent what it does. The implementation of the method should be clear 
+it apparent what it is; a method name should make it apparent what it does. The implementation of methods should be clear 
 and concise.
+
+Certainly, there will be times when comments are actually needed, but they should be the exception not the rule.
