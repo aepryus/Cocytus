@@ -1,6 +1,6 @@
 # Aspire to Memorize the Code Base
 
-Another certainly unachievable, but desired ideal is to have any code base you are working in entirely memorized.  If one has 
+Another certainly unachievable, but desired ideal is to have any code base you are working in entirely in your head.  If one has 
 all the code in their head, if they know where any given function is located and what it does, extending and maintaining the 
 project becomes substantially easier.
 
