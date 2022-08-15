@@ -8,7 +8,6 @@ _a few things to consider while coding_
 - [5. Don't Blindly Follow Rules](Rules.md)
 - [6. Simplify Over Commenting](Commenting.md)
 - [7. Avoid Spooky Action at a Distance](Spooky.md)
-- [8. Don't Include Code You Don't Understand](Understand.md)
 
 <p>
   <img src="07bic0ao8d571.jpg" width=500>
