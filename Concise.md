@@ -46,6 +46,6 @@ Concise code with few exceptions tends to enhance all of the above listed consid
 - It pushes one to avoid copy and paste and increase code reuse where possible.
 - Typing less code can boost speed to develop.  Although, writing reusable code does usually take longer to develop initially, long term it can greatly speed the rate of development.
 - Concise code is usually efficient code. There are, of course, counterexamples where particularly tight loops require clever solutions that increase the amount of code and decrease its readability, but these situations are fairly rare and can be confined in a code base.
-- Such a code base will be faster to iterate on, more maleable and less buggy; the end result of all that is higher form and higher function.
+- Such a code base will be faster to iterate on, more maleable and less buggy; the end result of all that is improved form and improved function.
 
 Concise code is very close to being a programming magic bullet.
