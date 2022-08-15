@@ -13,7 +13,7 @@ using the API, will interact with the API comes to mind.
 
 But when an API comes about in this manner, that last step, the programmer's interface, suffers. It suffers because rather than being designed for the developer that will use it, it was designed for the tool that it encapsulates.
 
-Instead, the first question should not have been ‘how do I solve this problem’; but rather, ‘if this problem were solved, how 
+The first question should not have been ‘how do I solve this problem’; but rather, ‘if this problem were solved, how 
 would I want to interact with it?’
 
 Once one figures out what an ideal interface looks like they, then and only then, can start to figure out how to implement 
