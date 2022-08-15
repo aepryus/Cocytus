@@ -23,7 +23,7 @@ One thing I'd like to point out about concerning the previous ["The Easiest Code
 
 - Concise code increases readability since there is less code to understand.
 - It pushes one to avoid copy and paste and increase code reuse where possible.
-- Typing less code can boost speed to develop.  Although, writing reusable code does usually take longer to develop initially, it can pay huge development speed dividends eventually.
+- Typing less code can boost speed to develop.  Although, writing reusable code does usually take longer to develop initially, long term it can greatly speed the rate of development.
 - Concise code is usually efficient code. There are, of course, counterexamples where particularly tight loops require clever solutions that increase the amount of code and decrease its readability, but these situations are fairly rare and can be confined in a code base.
 - Such a code base will be faster to iterate on, more maleable and less buggy; the end result of all that is higher form and higher function.
 
