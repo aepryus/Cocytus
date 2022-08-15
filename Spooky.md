@@ -19,7 +19,7 @@ For example, if I want a control B to be located 10 pixels to the right of contr
 
 Along the same lines, but even more troublesome are typedefs especially in regard to closures that hide the types of input parameters and return types.  Use of a typedef guarantees the need for subsequent developers to repeatedly need to navigate to the definition just to see basic type information.
 
-Similarly, implied types are even more unfriendly, because you can't just glance up and know what the variable represents and also you can't just right click on it and navigate to the type definition.
+Similarly, implied types are even more unfriendly, because not only can you not just glance up and know what the variable represents, but you alsocan't right click on it and navigate to the type definition.
 
 ## Vertical Spacing
 
