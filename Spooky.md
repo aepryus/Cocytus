@@ -13,7 +13,7 @@ For example, if I want a control B to be located 10 pixels to the right of contr
 - If I want to know how many pixels are between the controls I now can't see it at the relevant area of the code.  I need to navigate some where else.
 - If I want to adjust the value I need to do so where the constant is defined instead of at the code where it is used.
 - If I do adjust the value I now have to worry about if and how many other places use the value and if I want those changed also.
-- It can be very difficult to give such a variable a clear name and certainly not as clear as simply seeing how it's being in the code directly.
+- It can be very difficult to give such a variable a clear name and certainly not as clear as simply seeing how it's being used in the code directly.
 
 ## Typedefs
 
