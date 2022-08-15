@@ -47,19 +47,14 @@ has one UIImageView, call it imageView.
 
 There are a number of other ways one can increase the memorability of their code:
 
-Alphabetize imports and other areas of the code base that contain long lists of something.
-Keep the order of code in a file consistent. Group methods for extensions and interfaces; the order in one file should match 
-the order in all files.
-Keep the order of properties the same wherever they are located. I.e., the order properties are defined, should be the same 
-order they are translated to and from JSON and the same order getters and setters are defined, etc.
-Match the order of UI elements in the code to the order of the UI element on the screen.
-Properties themselves should be organized in a logical order; primary key at top, foreign keys next; data next and utility 
+- Alphabetize imports and other areas of the code base that contain long lists of something.  
+- Keep the order of code in a file consistent. Group methods for extensions and interfaces; the order in one file should match the order in all files.
+- Keep the order of properties the same wherever they are located. I.e., the order properties are defined, should be the same order they are translated to and from JSON and the same order getters and setters are defined, etc.
+- Match the order of UI elements in the code to the order of the UI element on the screen.
+- Properties themselves should be organized in a logical order; primary key at top, foreign keys next; data next and utility 
 properties last, for example. Similar properties should be grouped together; new properties should go where they belong not 
 just be tacked to the bottom or randomly placed.
-Static methods should be placed where they logically belong; where one would most expect them to be.
-Names should be chosen that match the language of use. For example, if your designer calls a grey color, ```‘CCCCCC’```, then name 
-your color ```‘CCCCCC’``` instead of ```grey8```. Calling it ```grey8``` will necessitate a trip to the color definition file each and every 
-time a developer uses the color until they have unnecessarily placed the naming map in their head.
-In some cases, a concise distinct name is preferable to a long winded name. For example, if you have an object that contains a 
+-  Static methods should be placed where they logically belong; where one would most expect them to be.
+-  In some cases, a concise distinct name is preferable to a long winded name. For example, if you have an object that contains a 
 list of all drugs available, you could call it the FullDrugListRepository, or you could call it Apothecary. One of those is 
 substantially more memorable than the other.
