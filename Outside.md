@@ -11,7 +11,7 @@ it, they might next ask in what form will it be saved? And then, how will the AP
 how will the API structure the data internally? And then finally the question of how the ‘end user’, i.e., the programmer 
 using the API, will interact with the API comes to mind.
 
-But when an API comes about in this manner, that last step, the programmers interface, suffers. It suffers because rather than being designed for the developer that will use it, it was designed for the tool that it encapsulates.
+But when an API comes about in this manner, that last step, the programmer's interface, suffers. It suffers because rather than being designed for the developer that will use it, it was designed for the tool that it encapsulates.
 
 Instead, the first question should not have been ‘how do I solve this problem’; but rather, ‘if this problem were solved, how 
 would I want to interact with it?’
