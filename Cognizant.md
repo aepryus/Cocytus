@@ -1,6 +1,6 @@
 # Always be Cognizant About Trade Offs
 
-Software development is a constant balancing act. One is constantly weighting the relative merits of a number of different 
+Software development is a constant balancing act. One is constantly weighing the relative merits of a number of different 
 factors. It is important to be cognizant of this process and to make thoughtful decisions about which to prioritize when they 
 come into conflict with one another. Here is a partial list of these considerations:
 
