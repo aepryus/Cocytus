@@ -48,7 +48,7 @@ has one UIImageView, call it imageView.
 There are a number of other ways one can increase the memorability of their code:
 
 - Alphabetize imports and other areas of the code base that contain long lists of something.  
-- Keep the order of code in a file consistent. Group methods for extensions and interfaces; the order in one file should match the order in all files.
+- Keep the order of code in a file consistent. Group methods for extensions and interfaces; their order in one file should match their order in all files.
 - Keep the order of properties the same wherever they are located. I.e., the order properties are defined, should be the same order they are translated to and from JSON and the same order getters and setters are defined, etc.
 - Match the order of UI elements in the code to the order of the UI element on the screen.
 - Properties themselves should be organized in a logical order; primary key at top, foreign keys next; data next and utility 
