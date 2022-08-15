@@ -57,8 +57,8 @@ Properties themselves should be organized in a logical order; primary key at top
 properties last, for example. Similar properties should be grouped together; new properties should go where they belong not 
 just be tacked to the bottom or randomly placed.
 Static methods should be placed where they logically belong; where one would most expect them to be.
-Names should be chosen that match the language of use. For example, if your designer calls a grey color, ‘CCCCCC’, then name 
-your color ‘CCCCCC’ instead of grey8. Calling it grey8 will necessitate a trip to the color definition file each and every 
+Names should be chosen that match the language of use. For example, if your designer calls a grey color, ```‘CCCCCC’```, then name 
+your color ```‘CCCCCC’``` instead of grey8. Calling it grey8 will necessitate a trip to the color definition file each and every 
 time a developer uses the color until they have unnecessarily placed the naming map in their head.
 In some cases, a concise distinct name is preferable to a long winded name. For example, if you have an object that contains a 
 list of all drugs available, you could call it the FullDrugListRepository, or you could call it Apothecary. One of those is 
