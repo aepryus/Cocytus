@@ -22,7 +22,7 @@ The side effects of always trying to write concise code, perhaps become a larger
 ## Always be Cognizant About Trade Offs
 
 Software development is a constant balancing act. One is constantly weighing the relative merits of a number of different 
-factors. It is important to be cognizant of this process and to make thoughtful decisions about which to prioritize when they 
+factors. It is helpful to be cognizant of this process and to make thoughtful decisions about which to prioritize when they 
 come into conflict with one another. Here is a partial list of these considerations:
 
 - form and function of the app
