@@ -18,7 +18,7 @@ For example, the form and function of the app is obviously of utmost importance.
 mind that would slightly improve the form of the app, but will take two weeks to implement. In that case, perhaps ‘speed to 
 develop’ may override ‘form and function’.
 
-One thing I'd like to point out about the previous "The Easiest 
+One thing I'd like to point out about the previous "The Easiest Code to Read is the Code that is not There"
 
 
 Harping back to my point about concise code; while there are often times when these factors come into conflict with one 
