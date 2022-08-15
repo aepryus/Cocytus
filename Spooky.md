@@ -25,4 +25,4 @@ Similarly, implied types are even more unfriendly, because not only can you not 
 
 Being stingy with vertical spacing allows for more code to be shown on the screen at the same time.  Obviously, using vertical spaces to help group related code can greatly increase readibility.  But, unnecessary and arbitrary extra vertical spaces, as well as unhelpful comments just reduces the amount of code that can be put up on the screen at the same time.
 
-Simularly, always putting input parameters of method calls on their own line can greatly reduce the amount of code that can be seen and in most cases (but certainly not all) doesn't enhance the readibility of the code.
+Simularly, always putting input parameters of method calls on their own line can greatly reduce the amount of code that can be seen at one time and in most cases (but certainly not all) doesn't enhance the readibility of the code.
