@@ -1,4 +1,4 @@
-# Be Predictable
+# Aspire to Memorize the Code Base
 
 Another certainly unachievable, but desired ideal is to have any code base you are working in entirely memorized.  If one has 
 all the code in their head, if they know where any given function is located and what it does, extending and maintaining the 
@@ -7,12 +7,13 @@ project becomes substantially easier.
 Of course memorizing 1000s of lines of code is impossible. But, there are a number of things one can do to make the task 
 easier. For example, if one were to memorize the following 6 ten digit numbers:
 
-8729216833
-1976070400
-1111111111
-1234567890
-3141592653
-1010010001
+- 8729216833
+- 1976070400
+- 1111111111
+- 1234567890
+- 3141592653
+- 1010010001
+
 It would quickly become apparent that some of these numbers are easier to remember than others and for various reasons; some 
 relate to things a person may already know, some are algorithmic with varying degrees of complexity.
 
@@ -22,11 +23,14 @@ code becomes more algorithmic, more predictable, it becomes increasingly easy to
 One area where this can be important is naming. For example, perhaps one has a view with a image on it; here are some 
 potential names:
 
+```Swift
 let empPortraitView: UIImageView
 let pictureOfEmployeeImageView: UIImageView
 let employeesPicImageView: UIImageView
 let employee: UIImageView
 let imageView: UIImageView
+```
+
 There a number of factors to consider when naming this object and one of them is memorableness. One thing that instantly 
 reduces the ability to remember something is to abbreviate it. There are any number of ways to abbreviate a word and once an 
 abbreviation is chosen one has created something that needs to be remembered.
