@@ -32,7 +32,7 @@ come into conflict with one another. Here is a partial list of these considerati
 - performance of the code
 - other app footprints such as memory, storage, bandwidth and battery usage
 
-The above list is loosely order by relative importance, however, everything really needs to be decided on a case by case 
+The above list is loosely ordered by relative importance, however, everything really needs to be decided on a case by case 
 basis. There really, is never case where any one of these items can’t trump another.
 
 For example, the form and function of the app is obviously of utmost importance. But, perhaps one has a very cool animation in 
