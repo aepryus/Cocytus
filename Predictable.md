@@ -1,4 +1,6 @@
-# Aspire to Memorize the Code Base
+[[3. Avoid Spooky Action at a Distance]](Spooky.md)
+
+# 4. Aspire to Memorize the Code Base
 
 Another certainly unachievable, but desired ideal is to have any code base you are working in entirely in your head.  If one has 
 all the code in their head, if they know where any given function is located and what it does, extending and maintaining the 
@@ -58,3 +60,5 @@ just be tacked to the bottom or randomly placed.
 -  In some cases, a concise distinct name is preferable to a long winded name. For example, if you have an object that contains a 
 list of all drugs available, you could call it the FullDrugListRepository, or you could call it Apothecary. One of those is 
 substantially more memorable than the other.
+
+[[5. Simplify Over Commenting]](Commenting.md)
