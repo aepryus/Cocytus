@@ -16,7 +16,7 @@ But when an API comes about in this manner, that last step, the programmer's int
 The first question should not have been ‘how do I solve this problem’; but rather, ‘if this problem were solved, how 
 would I want to interact with it?’
 
-Once one figures out what an ideal interface looks like they, then and only then, can start to figure out how to implement 
+Once one figures out what an ideal interface looks like they then can start to figure out how to implement 
 that interface. In this way, whether creating a class, an API or an app itself, the end product is much improved.
 
 One visceral example of this is the TV remote. The average TV remote is designed from the inside out and as a result it is a 
