@@ -1,6 +1,6 @@
 [[5. Simplify Over Commenting]](Commenting.md)
 
-# Don’t Solve Problems You Don’t Have
+# 6. Don’t Solve Problems You Don’t Have
 
 As a programmer it is good to be thinking about performance when coding and to not waste resources unnecessarily.  However, 
 there will always be many ways to solve a problem and while one of those ways is the most performant, perhaps many if not all 
