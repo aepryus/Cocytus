@@ -51,4 +51,4 @@ Concise code with few exceptions tends to enhance all of the above listed consid
 Concise code is very close to being a programming magic bullet.
 
 
-[2. Work from the Outside In; Not from the Inside Out](Outside.md)
+[[2. Work from the Outside In; Not from the Inside Out](Outside.md)]
