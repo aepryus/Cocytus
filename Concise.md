@@ -49,3 +49,6 @@ Concise code with few exceptions tends to enhance all of the above listed consid
 - Such a code base will be faster to iterate on, more maleable and less buggy; the end result of all that is improved form and improved function.
 
 Concise code is very close to being a programming magic bullet.
+
+
+[2. Work from the Outside In; Not from the Inside Out](Outside.md)
