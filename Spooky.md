@@ -1,4 +1,6 @@
-# Avoid Spooky Action at a Distance
+[[2. Work from the Outside In; Not from the Inside Out]](Outside.md)
+
+# 3. Avoid Spooky Action at a Distance
 
 The (perhaps never entirely achievable) ideal is that at any location in the code all relevant code is at hand.  If I want to understand an aspect of a program I'd love to be able to see all of the related and none of the unrelated code on the screen at once.  Arguably, this is the primary goal of object oriented programing itself.
 
@@ -26,3 +28,5 @@ Similarly, implied types are even more unfriendly, because not only can you not 
 Being stingy with vertical spacing allows for more code to be shown on the screen at the same time.  Obviously, using vertical spaces to help group related code can greatly increase readibility.  But, unnecessary and arbitrary extra vertical spaces, as well as unhelpful comments just reduces the amount of code that can be put up on the screen at the same time.
 
 Simularly, always putting input parameters of method calls on their own line can greatly reduce the amount of code that can be seen at one time and in most cases (but certainly not all) doesn't enhance the readibility of the code.
+
+[[4. Aspire to Memorize the Code Base]](Predictable.md)
