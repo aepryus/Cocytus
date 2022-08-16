@@ -1,4 +1,6 @@
-# Work from the Outside In; Not from the Inside Out
+[[1. The Easiest Code to Read is the Code that is not There]](Concise.md)
+
+# 2. Work from the Outside In; Not from the Inside Out
 
 It is always tempting to start with the beginning. It is much better to start with the ending.
 
@@ -22,3 +24,5 @@ that interface. In this way, whether creating a class, an API or an app itself, 
 One visceral example of this is the TV remote. The average TV remote is designed from the inside out and as a result it is a 
 cacophony of buttons, most of which only the engineers who made the TV have any idea what they do. On the other hand an Apple 
 TV remote was designed for the end user and the contrast between the two remotes is quite striking.
+
+[[3. Avoid Spooky Action at a Distance]](Spooky.md)
