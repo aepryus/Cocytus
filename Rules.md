@@ -1,4 +1,6 @@
-# Don’t Blindly Follow Rules
+[[6. Don't Solve Problems You Don't Have]](Optimize.md)
+
+# 7. Don’t Blindly Follow Rules
 
 Rules and religion can be useful tools for software developers.  But experienced and competent developers should not be afraid to leave them behind and consider whether they make sense on a case by case basis.
 
