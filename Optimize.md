@@ -1,3 +1,5 @@
+[[5. Simplify Over Commenting]](Commenting.md)
+
 # Don’t Solve Problems You Don’t Have
 
 As a programmer it is good to be thinking about performance when coding and to not waste resources unnecessarily.  However, 
@@ -13,3 +15,5 @@ program’s user interface itself.
 
 Don’t try to predict the future.  Design your program to meet the current requirements, not requirements that may or may not 
 exist in the future.
+
+[[7. Don't Blindly Follow Rules]](Rules.md)
